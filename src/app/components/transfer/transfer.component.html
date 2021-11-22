@@ -1,0 +1,20 @@
+<div class="transfer">
+  <ion-item lines="none">
+    <ion-label text-wrap >
+      <h2><b>Datos transferencia:</b></h2>
+      Cuanto te transfieren: {{ transf.cuantotransfiere }} <br />
+      Tipo de cuenta receptora: {{ transf.cuenta }} <br />
+      Mensaje: {{ transf.mensaje }}<br />
+      Moneda: {{ transf.moneda }}<br />
+      Numero de cuenta: {{ transf.numerocuenta }}<br />
+      ID transaccion: {{ transf._id }}<br/>
+
+      <h2><b>Datos cuenta remitente:</b></h2>
+
+      Nombre usuario: {{ transf.usuario.nombre }}<br />
+      Email: {{ transf.usuario.email }}<br />
+      Tipo cuenta: {{ transf.usuario.tipocuenta }}<br />
+      ID: {{ transf.usuario._id }}<br />
+    </ion-label>
+  </ion-item>
+</div>

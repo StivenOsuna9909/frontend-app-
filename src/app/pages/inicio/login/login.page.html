@@ -1,0 +1,38 @@
+<ion-header> </ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h4>Login</h4>
+    <p>Lets get started</p>
+  </div>
+
+  <form>
+    <ion-input
+      placeholder="Email"
+      name="email"
+      type="email"
+      [(ngModel)]="loginUser.email"
+      required
+      class="primary-input"
+    ></ion-input>
+  </form>
+
+  <form>
+    <ion-input
+      placeholder="Password"
+      type="password"
+      type="password"
+      [(ngModel)]="loginUser.password"
+      required
+      class="primary-input"
+    ></ion-input>
+  </form>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" (click)="mostrarLogin()">LOGIN</ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Close</a>
+  </div>
+</ion-content>
